@@ -12,9 +12,45 @@ html {
 
 body {
   color: $yellow;
-  background: #fff;
+  background: $violet;
 }
+
 .wrapper{
   display: flex;
   justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  min-height: 100vh;
+}
+.title{
+  display: block;
+  margin-bottom: 10px;
+}
+.textContent{
+  border-radius: 10px;
+  padding: 10px;
+  outline: none;
+  border: 2px solid transparent;
+}
+.textContent:focus{
+  border: 2px solid $yellow;
+}
+.button{
+  display: inline-block;
+}
+.button--item{
+  padding: 10px;
+  border-radius: 10px;
+  margin-right: 10px;
+  width: 100px;
+  border: none;
+  background-color: $yellow;
+  transition: all .3s ease-in-out;
+}
+.button--item:last-child{
+  margin-right: 0;
+}
+.button--item:hover{
+  background-color: #fca311;
+  cursor: pointer;
 }

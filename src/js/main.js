@@ -16,7 +16,21 @@ if ('serviceWorker' in navigator) {
 
 // place your code below
 
+const textarea = document.querySelector('.textContent--js');
+const load = document.querySelector('.load--js');
+const save = document.querySelector('.save--js');
+const buttonDelete = document.querySelector('.delete--js');
 
-console.log(`Hello world!`);
+save.addEventListener('click', (e) => {
+  localStorage.setItem('textarea', textarea.value);
+});
 
+load.addEventListener('click', (e) => {
+  textarea.value = localStorage.getItem('textarea');
+});
+
+buttonDelete.addEventListener('click', (e) => {
+  localStorage.removeItem('textarea');
+  textarea.value = " ";
+});
 
