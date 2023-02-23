@@ -344,29 +344,25 @@ body {
   padding: 10px;
   outline: none;
   border: 2px solid transparent; }
-
-.textContent:focus {
-  border: 2px solid #F9C802; }
+  .textContent:focus {
+    border: 2px solid #F9C802; }
 
 .button {
   display: inline-block; }
-
-.button--item {
-  padding: 10px;
-  border-radius: 10px;
-  margin-right: 10px;
-  width: 100px;
-  border: none;
-  background-color: #F9C802;
-  -webkit-transition: all .3s ease-in-out;
-  -o-transition: all .3s ease-in-out;
-  transition: all .3s ease-in-out; }
-
-.button--item:last-child {
-  margin-right: 0; }
-
-.button--item:hover {
-  background-color: #fca311;
-  cursor: pointer; }
+  .button--item {
+    padding: 10px;
+    border-radius: 10px;
+    margin-right: 10px;
+    width: 100px;
+    border: none;
+    background-color: #F9C802;
+    -webkit-transition: all .3s ease-in-out;
+    -o-transition: all .3s ease-in-out;
+    transition: all .3s ease-in-out; }
+    .button--item:last-child {
+      margin-right: 0; }
+    .button--item:hover {
+      background-color: #fca311;
+      cursor: pointer; }
 
 /*# sourceMappingURL=main.css.map */

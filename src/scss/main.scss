@@ -31,26 +31,26 @@ body {
   padding: 10px;
   outline: none;
   border: 2px solid transparent;
-}
-.textContent:focus{
-  border: 2px solid $yellow;
+  &:focus{
+    border: 2px solid $yellow;
+  }
 }
 .button{
   display: inline-block;
-}
-.button--item{
-  padding: 10px;
-  border-radius: 10px;
-  margin-right: 10px;
-  width: 100px;
-  border: none;
-  background-color: $yellow;
-  transition: all .3s ease-in-out;
-}
-.button--item:last-child{
-  margin-right: 0;
-}
-.button--item:hover{
-  background-color: #fca311;
-  cursor: pointer;
+  &--item{
+    padding: 10px;
+    border-radius: 10px;
+    margin-right: 10px;
+    width: 100px;
+    border: none;
+    background-color: $yellow;
+    transition: all .3s ease-in-out;
+    &:last-child{
+      margin-right: 0;
+    }
+    &:hover{
+      background-color: #fca311;
+      cursor: pointer;
+    }
+  }
 }
